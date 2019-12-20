@@ -8,7 +8,7 @@ var functionAdd = function( x, y, z ){
 		return this.num + x + y + z; 
 }
 
-console.log(functionAdd.call( obj, 2, 4, 6));  // 18
+console.log(functionAdd.call( obj, 2, 4, 6));  // Output:18
 
 // Apply method
 let obj = {num:6};
@@ -17,7 +17,7 @@ let functionAdd = function( x, y, z ){
 		return this.num + x + y + z; 
 }
 let arr= [2, 4, 6];
-console.log(functionAdd.apply( obj, arr)); //18
+console.log(functionAdd.apply( obj, arr)); // Output:18
 
 // Bind method
 let obj = {num:6};
@@ -26,4 +26,4 @@ let functionAdd = function( x, y, z ){
 		return this.num + x + y + z; 
 }
 var bound = functionAdd.bind(obj);
-console.log(bound( 1, 2, 3)); //12
+console.log(bound( 1, 2, 3)); // Output:12
