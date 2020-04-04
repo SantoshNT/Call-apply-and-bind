@@ -8,7 +8,6 @@ var functionAdd = function( x, y, z ){
 }
 
 console.log(functionAdd.call( obj, 2, 4, 6));  // Output:18
-
 // Apply method
 let obj = {num:6};
 
