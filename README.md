@@ -3,8 +3,7 @@ Coding using Javascript call, apply and bind  methods
 // Call Method
 var obj = {num:6};
 var functionAdd = function( x, y, z ){
-		return this.num + x + y + z; 
-}
+		return this.num + x + y + z; }
 
 console.log(functionAdd.call( obj, 2, 4, 6));  // Output:18
 // Apply method
